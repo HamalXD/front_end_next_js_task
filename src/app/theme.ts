@@ -2,9 +2,9 @@ import { extendTheme } from "@chakra-ui/react";
 
 export const colors = {
   brand: {
-    primary: "hsl(268,100%,60%)",
-    primaryLight: "hsl(268,100%,70%)",
-    primaryDark: "hsl(268,100%,50%)",
+    primary: 'hsl(337,79%,60%)',
+    primaryLight: 'hsl(337,79%,70%)',
+    primaryDark: 'hsl(337,79%,50%)',
   },
 };
 
