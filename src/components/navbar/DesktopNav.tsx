@@ -6,7 +6,7 @@ import {
   cartSectionStyles,
 } from "./style";
 import AppLogo from "../AppLogo";
-import { navItems } from "../helpers";
+import { navItems } from "../../helpers";
 import Search from "../Search/Search";
 import Link from "next/link";
 

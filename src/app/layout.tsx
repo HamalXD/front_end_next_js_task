@@ -1,10 +1,12 @@
 "use client";
 
+import "swiper/swiper-bundle.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { Inter } from "next/font/google";
 import { theme } from "../theme";
 import NavBar from "@src/components/navbar/NavBar";
+import { Footer } from "@src/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +26,7 @@ export default function RootLayout({
           <ChakraProvider theme={theme}>
             <NavBar />
             {children}
+            <Footer />
           </ChakraProvider>
         </CacheProvider>
       </body>
