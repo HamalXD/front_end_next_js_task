@@ -3,7 +3,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { Inter } from "next/font/google";
-import { theme } from "./theme";
+import { theme } from "../theme";
 import NavBar from "@src/components/navbar/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });

@@ -6,6 +6,8 @@ import {
   cartSectionStyles,
 } from "./style";
 import AppLogo from "../AppLogo";
+import { navItems } from "../helpers";
+import Link from "next/link";
 
 const DesktopNav = () => {
   return (
@@ -14,7 +16,13 @@ const DesktopNav = () => {
         <Box>
           <AppLogo />
         </Box>
-        <Box>NavItems</Box>
+
+        {navItems.map((navItems) => (
+          <Box key={navItems.label}>
+            <Link href={navItems.href}>{navItems.label}</Link>
+          </Box>
+        ))}
+
         <Box>Search</Box>
       </Stack>
 
