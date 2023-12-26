@@ -20,9 +20,11 @@ export default function RootLayout({
         <meta title="description" content="Buy Online"></meta>
       </head>
       <body>
-        <NavBar />
         <CacheProvider>
-          <ChakraProvider theme={theme}>{children}</ChakraProvider>
+          <ChakraProvider theme={theme}>
+            <NavBar />
+            {children}
+          </ChakraProvider>
         </CacheProvider>
       </body>
     </html>
